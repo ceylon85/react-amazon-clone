@@ -1,24 +1,75 @@
-import logo from './logo.svg';
+import React, {useEffect} from "react";
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from './Header/Header';
+import Home from './Home_Product/Home';
+import Checkout from './Checkout/Checkout';
+import Login from './Login';
+import Footer from './Footer/Footer';
+import {useStateValue} from './StateProvider';
+import {auth} from './firebase';
 
 function App() {
+  const [{ user }, dispatch] = useStateValue();
+
+  useEffect(() => {
+    //component가 loads 될 때 한 번만 실행
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+      console.log("The user is ==>", authUser);
+      if (authUser) {
+        // the user just logged in / the user was logged in
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+        //the user is logged out
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+      }
+    });
+    return () => {
+      //모든 정리작업이 여기에..
+      unsubscribe();
+    };
+  }, [dispatch]);
+
+  console.log("User is>>>>>>", user);
+
   return (
+    <Router>
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Switch>
+          {/* default route */}
+          <Route path="/" exact>
+            <Header />
+            <Home />
+            <Footer /> 
+          </Route>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
+          <Route path="/checkout">
+            <Header />
+            <Checkout />
+            <Footer />
+          </Route>
+
+          <Route path="/payment">
+            {/* <Header />
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
+            <Footer /> */}
+          </Route>
+        </Switch>
     </div>
+    </Router>
   );
 }
 

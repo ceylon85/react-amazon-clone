@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  font-family:"Amazon Ember",Arial,sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f3f3f3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scrollTop{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFF;
+  padding: 15px 0;
+  line-height: 15px;
+  background-color: #37475A;
+  margin-top: 10px;
+  padding: 17px;
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.scrollTop:hover{
+  opacity: 0.9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scrollTop > span {
+  font-size: 13px;
+  cursor:pointer;
+  font-weight: 600;
 }

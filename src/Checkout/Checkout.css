@@ -1,0 +1,87 @@
+.checkout {
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    height: max-content;
+}
+
+.checkout__ad {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.checkout__userEmail {
+  margin-left: 10px;
+}
+
+.checkout__header {
+  display: flex;
+  margin-right: 8px;
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px solid lightgray;
+
+}
+
+.checkout__title {
+  font-size: 28px;
+  float: left;
+  width: 80%;
+  margin-bottom: 10px;
+  }
+
+.checkout__price {
+  display: flex-end;
+  text-align: right !important;
+  font-size: 16px;
+  color: #565959;
+  width: 15%;
+  padding-top: 20px;
+  margin-left: 100px;
+}
+
+.checkout__container {
+  display: inline-block;
+  width: 100%;
+}
+
+.checkout__left {
+  display: inline-block;
+}
+
+.checkout__right {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* .checkout__empty */
+.checkout__empty{
+  margin-top: 32px !important;
+  display: flex;
+}
+
+.checkout__empty__img {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.checkout__empty__text {
+  width: 65%;
+  float:right;
+}
+
+.checkout__empty__text > p{
+  margin-top: 10px;
+}
+
+.checkout__empty__title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.checkout__empty__td {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #007185;
+}
+

@@ -1,0 +1,130 @@
+.header {
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+.header__logo {
+    padding: 1px;
+    margin: 4px 1px 1px 1px;
+}
+
+.header__logo > img {
+    width: 100px;
+    object-fit: contain;
+    padding: 11px 5px 2px 5px;
+}
+
+
+.header__logo > img:hover {
+    outline: none;
+    box-shadow: 0 0 0 1px #fff inset;
+    border-radius: 3px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+
+.header__nav > a {
+    text-decoration: none;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    margin: 2px 0;
+
+}
+.header__option:hover,
+.header__optionBasket:hover {
+    outline: none;
+    box-shadow: 0 0 0 1px #fff inset;
+    border-radius: 3px;
+}
+
+.header__option1 {
+    font-size: 12px;
+}
+
+.header__option2 {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.header__optionBasket{
+    display: flex;
+    align-items: center;
+    padding: 8px 2px 4px 0;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.header__basketCount {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.header__search {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.header__searchInput {
+    position: flex;
+    height: 18px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header__searchIcon {
+    position: relative;
+    cursor: pointer;
+    background-color: #cd9042;
+    padding: 6px;
+    height: 26px !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media (max-width:750px){
+    .header {
+        display:flow-root;
+        height: auto;
+        padding-bottom: 6px;
+        zoom: 0.81;
+        
+    }
+    .header__search {
+        margin-left: 6px;
+        margin-right:6px;
+    }
+    .header__nav {
+        position: absolute;
+        width: 400px;
+        top: 15px;
+        right: 0;
+        margin-left: 10px;
+    }
+    .header__logo > img{
+        width: 100px;
+        margin-right: 20px;
+    }
+}

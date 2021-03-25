@@ -1,0 +1,57 @@
+.header__main {
+    background-color: #232F3E;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    height: 38px;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu { 
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+    margin: 5px 0 5px 1px;
+
+}
+.header__menu > span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.header__menuIcon {
+    color: #fff;
+    font-size: 12px;
+}
+
+.header__menuAll {
+    color: #fff;
+    font-size: 12px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__right > span {
+    color: #fff;
+    margin: 5px 0 5px 0;
+    padding: 6px 9px;
+}
+
+.header__right > span:hover {
+    outline: none;
+    box-shadow: 0 0 0 1px #fff inset;
+    border-radius: 3px;
+}
+
+.header__left > div:hover {
+    outline: none;
+    box-shadow: 0 0 0 1px #fff inset;
+    border-radius: 3px;
+}

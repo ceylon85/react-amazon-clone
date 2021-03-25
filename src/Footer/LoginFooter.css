@@ -1,0 +1,77 @@
+.loginFooter {
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    top:500px;
+    height: 100px;
+}
+.loginFooter__container {
+    height: 40px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    z-index: 0;
+    zoom: 1;
+}
+
+.loginFooter__divider {
+    display: block;
+    height: 28px;
+    background: linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+    z-index: 1;
+    content: "";
+}
+
+.loginFooter__row {
+    text-align: center !important;
+}
+/* 작동을 확인해보자! */
+.loginFooter__row > a { 
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 800;
+    color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 275ms ease;
+}
+
+.loginFooter__row > a:hover {
+    background-position: 0 100%;
+}
+
+.loginFooter__row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginFooter__text {
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #0066c0;
+}
+
+.loginFooter__text2 {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 5;
+}
+
+.loginFooter__seperator {
+    display: inline-block;
+    width: 20px;
+}
+
+.git__logo {
+    height: 24px;
+    width: 24px;
+    cursor: help;
+
+}
