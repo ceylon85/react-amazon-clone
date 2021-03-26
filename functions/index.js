@@ -20,8 +20,6 @@ app.use(express.json());
 // - API routes
 app.get("/", (request, response) => response.status(200).send("hello world"));
 
-app.get("/sj", (request, response) => response.status(200).send("hello sj"));
-
 app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
 
@@ -32,11 +30,11 @@ app.post("/payments/create", async (request, response) => {
     currency: "usd",
   });
   // OK - Created
-  // eslint-disable-next-line no-undef
-  response = status(201).send({
-    clientSecret: paymentIntent.client__secret,
+  response.status(201).send({
+    clientSecret: paymentIntent.client_secret,
   });
 });
+
 // - Listen command
 exports.api = functions.https.onRequest(app);
 

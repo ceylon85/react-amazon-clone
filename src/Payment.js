@@ -6,7 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
-import axios from "./Axios";
+import axios from "./axios";
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -36,8 +36,9 @@ function Payment() {
     getClientSecret();
   }, [basket]);
 
-  console.log('The Secret is ===> ', clientSecret);
-  
+  console.log("The Secret is ===> ", clientSecret);
+  console.log('👱', user)
+
   const handleSubmit = async (event) => {
     //모든 stripe 작업
     event.preventDefault();
@@ -111,6 +112,7 @@ function Payment() {
             {/* Stripe */}
             <form onSubmit={handleSubmit}>
               <CardElement onChange={handleChange} />
+
               <div className="payment__priceContainer">
                 <CurrencyFormat
                   renderText={(value) => <h3>총 금액: {value}</h3>}
