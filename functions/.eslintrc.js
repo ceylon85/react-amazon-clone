@@ -7,7 +7,10 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "google",
+    "airbnb",
   ],
+  parser: "babel-eslint",
+
   rules: {
     quotes: ["error", "double"],
   },
