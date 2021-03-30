@@ -23,7 +23,7 @@ function Header() {
         <Link to="/">
           <div className="header__logo">
             <img
-              src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+              src="https://www.pinclipart.com/picdir/big/358-3584545_amazon-web-services-logo-png-transparent-svg-vector.png"
               alt="logo"
             />
           </div>
