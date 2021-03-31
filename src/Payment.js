@@ -79,7 +79,7 @@ function Payment() {
   const handleChange = (event) => {
     //CardElement의 변경사항과 고객이 카드 세부 정보를 입력할 때 오류가 발생하면 표시
     setDisabled(event.empty);
-    setError(event.error ? event.error.message : "카드 정보를 다시 입력하세요");
+    setError(event.error ? event.error.message : " ");
   };
 
   return (

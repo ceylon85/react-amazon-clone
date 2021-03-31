@@ -31,3 +31,20 @@
 .payment__details{
     flex: 0.8;
 }
+
+.payment__details > form {
+    max-width: 400px;
+}
+
+.payment__priceContainer > button {
+    cursor: pointer;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    border: 1px solid;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border-color: #a88734 #9c7e31 #846a29;
+    outline:0;
+}
