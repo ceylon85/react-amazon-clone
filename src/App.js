@@ -4,14 +4,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header/Header";
 import Home from "./Home_Product/Home";
 import Checkout from "./Checkout/Checkout";
-import Login from "./Login";
+import Login from "./Login/Login";
 import Footer from "./Footer/Footer";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
-import Payment from "./Payment";
+import Payment from "./Payment/Payment";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import Orders from "./Orders";
+import Orders from "./Order/Orders";
 
 const promise = loadStripe(
   "pk_test_51IWdlsJdM5qUOUeUrgjHuAAyuRkPygf1JZ477y0gmKtmKz22fccJn9OAvLEEJZx5wVU6FreHZ8pjknr1luNtv94i00tQoDPvRj"

@@ -26,7 +26,7 @@ function LoginFooter() {
           <span className="loginFooter__seperator"/>
           <a href="https://github.com/ceylon85/react-amazon-clone">
             <img
-              className="git__logo"
+              className="git__logo2"
               src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
               alt="git"
               title="클릭하시면 github로 이동합니다"

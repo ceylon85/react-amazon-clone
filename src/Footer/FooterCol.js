@@ -1,6 +1,5 @@
 import React from "react";
 import "./FooterCol.css";
-import { Link } from "react-router-dom";
 
 function FooterCol() {
   return (
