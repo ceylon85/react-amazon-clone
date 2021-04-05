@@ -1,17 +1,12 @@
 # **`react-Amazon-clone`**
 react를 사용하여 만든 Amazon web site
 
-
+#
 ## `Firebase deploy`
 ### Link to **[View](https://clone-bc826.web.app/)**
-
 #
-- FE: React
-- BE: express, firebase-functions
-- DB: firebase-fireStore
-## 사용 npm 
-- Payment: stripe-js
-
+# `사용 기술`
+React, React-Router, Express, Axios, firebase-fireStore, Stripe
 ## `Main Dir Structure`
 - functions
     - `index.js`: 백엔드 관련 
@@ -24,7 +19,7 @@ react를 사용하여 만든 Amazon web site
     - `Order`: 주문 history component
     - `Payment`: 결제 관련 component
     - `firebase.js`: firebase 구성
-    - `axios`: 서버 API
+#
 ## **`Main Feature`**
 ### `1. HOME`
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/45006553/113262855-0b18d700-930c-11eb-9e20-b87b26b338f5.gif)
@@ -92,9 +87,3 @@ service cloud.firestore {
   }
 }
 ```
-
-####
-개발 중간에 amazon web page가 리뉴얼이 되었다.   
-변경된 사이트의 ui를 최대한 반영해보려고 했지만, 아직 부족했다.
-
-### Required Version
